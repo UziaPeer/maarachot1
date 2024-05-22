@@ -13,7 +13,7 @@ int factorial(int num){
 //option for efficiancy- add sqrt to for loop
 int isPrime(int num){
     int tmp=num;
-    if (tmp<=1){
+    if (tmp<1){
         return 0;
     }
     for (int i=2; i<tmp; i++){
