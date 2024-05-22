@@ -5,8 +5,6 @@ int power(int, int);
 int calcArmstrongRecursive(int, int);
 int isPalindromeRecursive(int, int);
 
-// is armstrong number recursion version
-// Wrapper function to initiate the recursive check
 int isArmstrong(int num) {
     int n = numDigits(num);
     if (num == calcArmstrongRecursive(num, n)) {
@@ -16,7 +14,6 @@ int isArmstrong(int num) {
 }
 
 
-// Recursive function to check if a number is an Armstrong number
 int calcArmstrongRecursive(int number, int numberofdigits) {
     if (number < 10) {
         return power(number, numberofdigits);
